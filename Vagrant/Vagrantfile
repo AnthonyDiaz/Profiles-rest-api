@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "forwarded_port", host_ip: "127.0.0.1", guest: 8081, host: 8081
 
-  config.vm.synced_folder "/Users/tdiaz/workspace/profiles-rest-api", "/opt/workspace/"
+  config.vm.synced_folder "/Users/tdiaz/workspace/", "/opt/workspace/"
 
   config.vm.provision "shell", inline: <<-SHELL
     # Update and upgrade the server packages.
