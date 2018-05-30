@@ -1,15 +1,16 @@
 from rest_framework import serializers
+
 from . import models
 
 
 class HelloSerializer(serializers.Serializer):
-    """Serializes a name field for testing our APIVIEW."""
+    """Serializes a name field for testing our APIView."""
 
     name = serializers.CharField(max_length=10)
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    """A serializer for the user profile object."""
+    """A serializer for our user profile objects."""
 
     class Meta:
         model = models.UserProfile
