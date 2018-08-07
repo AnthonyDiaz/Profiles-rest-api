@@ -51,7 +51,7 @@ have the python env activate, and you are in the correct direct
    3. Make sure that the database configuration is up to date with command ```python manage.py makemigrations```
    4. Run Python Django development server to host api ```python manage.py runserver 0.0.0.0:8081```
 
-##Links:
+## Links:
 Link for local machine: 
 
 [http://127.0.0.1:8081](http://127.0.0.1:8081/api/ "Profiles API")
